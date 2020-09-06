@@ -14,36 +14,46 @@
  */
 
 module.exports.security = {
-
   /***************************************************************************
-  *                                                                          *
-  * CORS is like a more modern version of JSONP-- it allows your application *
-  * to circumvent browsers' same-origin policy, so that the responses from   *
-  * your Sails app hosted on one domain (e.g. example.com) can be received   *
-  * in the client-side JavaScript code from a page you trust hosted on _some *
-  * other_ domain (e.g. trustedsite.net).                                    *
-  *                                                                          *
-  * For additional options and more information, see:                        *
-  * https://sailsjs.com/docs/concepts/security/cors                          *
-  *                                                                          *
-  ***************************************************************************/
+   *                                                                          *
+   * CORS is like a more modern version of JSONP-- it allows your application *
+   * to circumvent browsers' same-origin policy, so that the responses from   *
+   * your Sails app hosted on one domain (e.g. example.com) can be received   *
+   * in the client-side JavaScript code from a page you trust hosted on _some *
+   * other_ domain (e.g. trustedsite.net).                                    *
+   *                                                                          *
+   * For additional options and more information, see:                        *
+   * https://sailsjs.com/docs/concepts/security/cors                          *
+   *                                                                          *
+   ***************************************************************************/
 
   // cors: {
   //   allRoutes: false,
   //   allowOrigins: '*',
   //   allowCredentials: false,
   // },
-
+  //Roomey Vai
+  cors: {
+    allRoutes: true,
+    allowOrigins: "*",
+    allowCredentials: false,
+    allowRequestHeaders: "authorization, content-type",
+    allowRequestMethods: "GET, POST, PUT, DELETE, OPTIONS, HEAD,PATCH",
+    allowResponseHeaders: "page,total,limit",
+    // allowOrigins: ['http://localhost:3001']
+  },
 
   /****************************************************************************
-  *                                                                           *
-  * CSRF protection should be enabled for this application.                   *
-  *                                                                           *
-  * For more information, see:                                                *
-  * https://sailsjs.com/docs/concepts/security/csrf                           *
-  *                                                                           *
-  ****************************************************************************/
+   *                                                                           *
+   * CSRF protection should be enabled for this application.                   *
+   *                                                                           *
+   * For more information, see:                                                *
+   * https://sailsjs.com/docs/concepts/security/csrf                           *
+   *                                                                           *
+   ****************************************************************************/
 
-  csrf: true
+  // csrf: true
 
+  //Roomey Vai
+  csrf: false,
 };
