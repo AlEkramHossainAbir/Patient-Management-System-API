@@ -50,14 +50,14 @@ module.exports.http = {
     // })(),
     //Roomey Vai
 
-    // passportInit: require("passport").initialize(),
-    // passportSession: require("passport").session(),
+    passportInit: require("passport").initialize(),
+    passportSession: require("passport").session(),
 
     order: [
       "cookieParser",
       "session",
-      // "passportInit",
-      // "passportSession",
+      "passportInit",
+      "passportSession",
       "bodyParser",
       "compress",
       "poweredBy",

@@ -20,6 +20,11 @@ module.exports.policies = {
   "legal/view-terms": true,
   "legal/view-privacy": true,
   "deliver-contact-form-message": true,
-  //Roomey Vai
   "guest/*": true,
+  AuthController: {
+    signUp: true,
+    login: true,
+    default: true,
+    test: true,
+  },
 };
