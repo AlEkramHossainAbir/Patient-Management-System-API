@@ -1,15 +1,15 @@
 module.exports = {
-  friendlyName: "Signup",
+  friendlyName: "docAppointment",
 
-  description: "Sign up for a new user account.",
+  description: "Appointment For a Doctor.",
 
   extendedDescription: `This creates a new user record in the database, signs in the requesting user agent
-by modifying its [session](https://sailsjs.com/documentation/concepts/sessions), and
-(if emailing with Mailgun is enabled) sends an account verification email.
-
-If a verification email is sent, the new user's account is put in an "unconfirmed" state
-until they confirm they are using a legitimate email address (by clicking the link in
-the account verification message.)`,
+  by modifying its [session](https://sailsjs.com/documentation/concepts/sessions), and
+  (if emailing with Mailgun is enabled) sends an account verification email.
+  
+  If a verification email is sent, the new user's account is put in an "unconfirmed" state
+  until they confirm they are using a legitimate email address (by clicking the link in
+  the account verification message.)`,
 
   inputs: {
     emailAddress: {
@@ -20,15 +20,15 @@ the account verification message.)`,
       extendedDescription: "Must be a valid email address.",
     },
 
-    password: {
+    doctorsname: {
       required: true,
       type: "string",
       maxLength: 200,
-      example: "passwordlol",
-      description: "The unencrypted password to use for the new account.",
+      example: "mrxyz ok dsof",
+      description: "Doctors Name.",
     },
 
-    fullName: {
+    name: {
       required: true,
       type: "string",
       example: "Frida Kahlo de Rivera",

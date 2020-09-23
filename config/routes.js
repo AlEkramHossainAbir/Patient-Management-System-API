@@ -73,4 +73,8 @@ module.exports.routes = {
     controller: "AuthController",
     action: "login",
   },
+  "POST  /api/v1/guest/docAppointment": {
+    controller: "AppointmentController",
+    action: "getData",
+  },
 };

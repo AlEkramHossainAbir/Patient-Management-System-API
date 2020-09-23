@@ -1,8 +1,7 @@
 "use strict";
 
 const jwt = require("jsonwebtoken"),
-  tokenSecret =
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCoiNWU4MjFkYmZhZTdjY2U3YmI3ODBiY2ZhIiwiaWF0IjoxNTkxMTc4ODMyLCJleHAiOjE1OTExNzg4OTIsImV4cDIiOjE1OTExppF5xF1HRWxi7GefBLPZPlcBrZzLaMp4SuNR4eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXV1c2VySWRkIjoiNWU4MjFkYmZhZTdjY2U3YmI3ODBiY2ZhIiwiaWF0IjoxNTkxMTgwMzQyLCJleHAiOjE1OTExODA0MDIsImV4cDIiOjE1OTExODM5NDie15SQHLJkRTEg_W4G-6x1yBBsSydfXlk4wo";
+  tokenSecret = "1234";
 
 var jwToken = {
   // Generates a token from supplied payload
