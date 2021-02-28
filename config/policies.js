@@ -27,4 +27,8 @@ module.exports.policies = {
     default: true,
     test: true,
   },
+  DocController:{
+    addDoctor: true,
+    getDoctor:true,
+  }
 };

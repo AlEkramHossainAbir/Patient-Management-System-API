@@ -4,7 +4,7 @@ const bcrypt = require("bcrypt");
 async function insert(user) {
   user.hashedPassword = bcrypt.hashSync(user.password, 10);
   delete user.password;
-  console.log("ssaving user to db ", user);
+  console.log("saving user to db ", user);
   return await new User(user).save();
 }
 
